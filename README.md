@@ -1,4 +1,4 @@
-#Hashing Exercise
+# Hashing Exercise
 
 
 This repository was created as part of my operational systems class project.
@@ -6,7 +6,7 @@ Here you will find a bash script of a simple hashing exercise.
 
 This script takes as an input a 4-digit integer, hashes it using SHA-256 and stored the hash in a file.
 
-##Usage
+## Usage
 
 1. Make sure you have bash installed on your computer.
 
@@ -26,13 +26,14 @@ This script takes as an input a 4-digit integer, hashes it using SHA-256 and sto
 
 6. The output will be stored in the file `hash_output.txt`.
 
-##Example
+## Example
 
 
 I have hashed the number 0554 like this:
 	```bash
 	./hash_script 0554
 	```
+
 and the output is stored in the `hash_output.txt` as such:
 `Hashed output: d3d29bda9ce1dd0de4c57fc488b35bc1ccecfb98a874e5527d9ee59e58072927`
 
