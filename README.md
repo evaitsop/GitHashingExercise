@@ -30,10 +30,9 @@ This script takes as an input a 4-digit integer, hashes it using SHA-256 and sto
 
 
 I have hashed the number 0554 like this:
-	```bash
-	./hash_script 0554
-	```
-
+```bash
+./hash_script 0554
+```
 and the output is stored in the `hash_output.txt` as such:
 `Hashed output: d3d29bda9ce1dd0de4c57fc488b35bc1ccecfb98a874e5527d9ee59e58072927`
 
