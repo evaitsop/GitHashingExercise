@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#The initial example uses number 0554, after you run the script the hash of 0554 will no longer exist in the file and will be overwritten by your new number.
+
+#Check if the input number is a 4digit integer
+if ! [[ $1 =~ ^[0-9]{4}$ ]]; then
+	echo "Error: Please input a 4 digit integer."
+	exit 1
+fi
+
+#Store input
+a=$1
+
+#Hash
+hashed_a=$(echo -n "$a" | sha256sum | cut -d " " -f1)
+
+#Save in file hash_output.txt
+echo "Hashed output: $hashed_a" > $PWD/hash_output.txt
